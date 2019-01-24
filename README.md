@@ -144,10 +144,10 @@ MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
 
 Go throught the sample project to have a better understanding of different usages. The project demostrates almost all the functions of the library.
 
-![](https://i.imgur.com/Ia9JPVt.png)
+![](https://i.imgur.com/ikxmccI.png)
 
 ## See Also
 
 • [Bolt Cloud API Ddocumentation](https://docs.boltiot.com/docs/introduction).<br />
-• Official [Python Client Library](https://github.com/Inventrom/bolt-api-python).<br />
+• [Official Python Client Library](https://github.com/Inventrom/bolt-api-python).<br />
 • [Python Client Library Documentation](https://docs.boltiot.com/docs/python-library).
