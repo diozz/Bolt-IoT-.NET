@@ -142,7 +142,7 @@ MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
 
 ## Demo
 
-Go through the sample project to have a better understanding of different usages. The project demostrates almost all the functions of the library.
+Go through the sample project to have a better understanding of different usages. The project demostrates almost all the functions of the library. To run the demo, right click on the project, set it as startup project and press the run button.
 
 ![](https://i.imgur.com/ikxmccI.png)
 
