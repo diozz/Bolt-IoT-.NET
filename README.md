@@ -5,8 +5,9 @@ Interact with Bolt Cloud API easily using **C#**. API documentation is available
 ## Quickstart
 
 Start by creating a `Bolt` object.
-
+```c#
     Bolt myBolt = new Bolt("<API KEY>", "DEVICE ID>");
+```
 
 ## GPIO Functions
 
