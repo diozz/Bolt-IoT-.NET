@@ -53,7 +53,7 @@ MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
 ### AnalogWrite
 
 ```c#
-Response response = await myBolt.AnalogWrite(AnalogPins.A0, "");
+Response response = await myBolt.AnalogWrite(AnalogPins.A0, 128);
 MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
 ```
 
