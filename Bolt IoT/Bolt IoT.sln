@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bolt IoT", "Bolt IoT\Bolt IoT.csproj", "{0D513330-B18B-4C9D-B803-6A8D8611DD63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoltIoT Demo", "BoltIoT Demo\BoltIoT Demo.csproj", "{CB7B395C-E512-4652-B86A-876EE691E5C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D513330-B18B-4C9D-B803-6A8D8611DD63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D513330-B18B-4C9D-B803-6A8D8611DD63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D513330-B18B-4C9D-B803-6A8D8611DD63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D513330-B18B-4C9D-B803-6A8D8611DD63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB7B395C-E512-4652-B86A-876EE691E5C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7B395C-E512-4652-B86A-876EE691E5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7B395C-E512-4652-B86A-876EE691E5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7B395C-E512-4652-B86A-876EE691E5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B97A3C15-4FC3-4C13-BA6B-6D388C6AE155}
+	EndGlobalSection
+EndGlobal
