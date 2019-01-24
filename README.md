@@ -1,4 +1,4 @@
-# Bolt IoT - A C# Client Library
+# Bolt API Cloud - A C# Client Library
 
 ## Quickstart
 
