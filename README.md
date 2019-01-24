@@ -1,8 +1,4 @@
-# Bolt IoT - A C# Library
-
-#botiot c# #api
-
-Interact with Bolt Cloud API easily using **C#**. 
+# Bolt IoT - A C# Client Library
 
 ## Quickstart
 
