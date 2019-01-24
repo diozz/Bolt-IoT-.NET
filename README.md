@@ -152,6 +152,6 @@ Go throught the sample project to have a better understanding of different usage
 
 ## See Also
 
-• [Bolt Cloud API Ddocumentation.](https://docs.boltiot.com/docs/introduction).
-• Official [Python Client Library.](https://github.com/Inventrom/bolt-api-python)
-• [Python Client Library Documentation.](https://docs.boltiot.com/docs/python-library)
+• [Bolt Cloud API Ddocumentation](https://docs.boltiot.com/docs/introduction).<br />
+• Official [Python Client Library](https://github.com/Inventrom/bolt-api-python).<br />
+• [Python Client Library Documentation](https://docs.boltiot.com/docs/python-library).
