@@ -13,7 +13,7 @@ Bolt myBolt = new Bolt("<API KEY>", "DEVICE ID>");
 ### DigitalWrite
 
 ```c#
-Response response = await myBolt.DigitalWrite(pin, state);
+Response response = await myBolt.DigitalWrite(DigitalPins.D0, DigitalStates.High);
 MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
 ```
 
