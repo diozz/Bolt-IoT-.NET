@@ -42,11 +42,11 @@ MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
 
 ```c#
 List<string> pinsToRead = new List<string>
-                      {
-                          DigitalPins.D0,
-                          DigitalPins.D1,
-                          DigitalPins.D2
-                      };
+                          {
+                              DigitalPins.D0,
+                              DigitalPins.D1,
+                              DigitalPins.D2
+                          };
 
 Response response = await DigitalMultiRead(pinsToRead);
 MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
