@@ -2,7 +2,7 @@
 
 #botiot c# #api
 
-Interact with Bolt Cloud API easily using **C#**. Official API documentation is available [here](https://docs.boltiot.com/docs/introduction).
+Interact with Bolt Cloud API easily using **C#**. 
 
 ## Quickstart
 
@@ -148,4 +148,10 @@ MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
 
 Go throught the sample project to have a better understanding of different usages. The project demostrates almost all the functions of the library.
 
-![](https://i.imgur.com/TxwQMhU.png)
+![](https://i.imgur.com/Ia9JPVt.png)
+
+## See Also
+
+• [Bolt Cloud API Ddocumentation.](https://docs.boltiot.com/docs/introduction).
+• Official [Python Client Library.](https://github.com/Inventrom/bolt-api-python)
+• [Python Client Library Documentation.](https://docs.boltiot.com/docs/python-library)
