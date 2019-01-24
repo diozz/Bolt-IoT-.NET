@@ -1,6 +1,8 @@
-# Bolt IoT - A C# Library  
+# Bolt IoT - A C# Library
 
-Interact with Bolt Cloud API easily using **C#**. API documentation is available [here](https://docs.boltiot.com/docs/introduction).
+#botiot c# #api
+
+Interact with Bolt Cloud API easily using **C#**. Official API documentation is available [here](https://docs.boltiot.com/docs/introduction).
 
 ## Quickstart
 
@@ -142,3 +144,8 @@ Response response = await myBolt.Restart();
 MessageBox.Show("Opertion Succeeded: " + response.Success.ToString());
 ```
 
+## Demo
+
+Go throught the sample project to have a better understanding of different usages. The project demostrates almost all the functions of the library.
+
+![](https://i.imgur.com/TxwQMhU.png)
