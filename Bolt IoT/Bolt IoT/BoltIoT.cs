@@ -47,7 +47,7 @@ namespace BoltIoT
         /// <returns></returns>
         public async Task<Response> DigitalMultiWrite(MultiPinConfig muliConfig)
         {
-            string Querry = EndpointUrl + ApiKey + "/digitalMultiWrite?pin=" + muliConfig.PinCsv + "&state=" + muliConfig.StateCsv + "&deviceName=" + DeviceId;
+            string Querry = EndpointUrl + ApiKey + "/digitalMultiWrite?pins=" + muliConfig.PinCsv + "&states=" + muliConfig.StateCsv + "&deviceName=" + DeviceId;
 
             string responseString = "";
             await Task.Run(delegate
