@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Threading.Tasks;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> DigitalWrite(string pin, string state)
         {
-            string Querry = EndpointUrl + ApiKey + "/digitalWrite?pin=" + pin + "&state=" + state + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/digitalWrite?pin=" + pin + "&state=" + state);
 
             string responseString = "";
             await Task.Run(delegate
@@ -47,7 +47,7 @@ namespace BoltIoT
         /// <returns></returns>
         public async Task<Response> DigitalMultiWrite(MultiPinConfig muliConfig)
         {
-            string Querry = EndpointUrl + ApiKey + "/digitalMultiWrite?pins=" + muliConfig.PinCsv + "&states=" + muliConfig.StateCsv + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/digitalMultiWrite?pin=" + muliConfig.PinCsv + "&state=" + muliConfig.StateCsv);
 
             string responseString = "";
             await Task.Run(delegate
@@ -65,7 +65,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> DigitalRead(string pin)
         {
-            string Querry = EndpointUrl + ApiKey + "/digitalRead?pin=" + pin + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/digitalRead?pin=" + pin);
 
             string responseString = "";
             await Task.Run(delegate
@@ -83,7 +83,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> DigitalMultiRead(List<string> pins)
         {
-            string Querry = EndpointUrl + ApiKey + "/digitalMultiRead?pin=" + string.Join(",", pins) + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/digitalMultiRead?pin=" + string.Join(",", pins));
 
             string responseString = "";
             await Task.Run(delegate
@@ -102,7 +102,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> AnalogWrite(string pin, int value)
         {
-            string Querry = EndpointUrl + ApiKey + "/analogWrite?pin=" + pin + "&value=" + value.ToString() + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/analogWrite?pin=" + pin + "&value=" + value.ToString());
 
             string responseString = "";
             await Task.Run(delegate
@@ -120,7 +120,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> AnalogMultiWrite(MultiPinConfig muliConfig)
         {
-            string Querry = EndpointUrl + ApiKey + "/analogMultiWrite?pin=" + muliConfig.PinCsv + "&state=" + muliConfig.StateCsv + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/analogMultiWrite?pin=" + muliConfig.PinCsv + "&state=" + muliConfig.StateCsv);
 
             string responseString = "";
             await Task.Run(delegate
@@ -138,7 +138,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> AnalogRead(string pin /* =A0 */)
         {
-            string Querry = EndpointUrl + ApiKey + "/analogRead?pin=" + pin + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/analogRead?pin=" + pin);
 
             string responseString = "";
             await Task.Run(delegate
@@ -160,7 +160,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> SerialBegin(BaudRates baudRate)
         {
-            string Querry = EndpointUrl + ApiKey + "/serialBegin?baud=" + ((int)baudRate).ToString() + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/serialBegin?baud=" + ((int)baudRate).ToString());
 
             string responseString = "";
             await Task.Run(delegate
@@ -178,7 +178,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> SerialWrite(string data)
         {
-            string Querry = EndpointUrl + ApiKey + "/serialWrite?data=" + Uri.EscapeUriString(data) + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/serialWrite?data=" + Uri.EscapeUriString(data));
 
             string responseString = "";
             await Task.Run(delegate
@@ -195,7 +195,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> SerialRead()
         {
-            string Querry = EndpointUrl + ApiKey + "/serialRead?till=10&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/serialRead?till=10");
 
             string responseString = "";
             await Task.Run(delegate
@@ -213,7 +213,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> SerialRead(string till)
         {
-            string Querry = EndpointUrl + ApiKey + "/serialRead?till=" + till + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/serialRead?till=" + till);
 
             string responseString = "";
             await Task.Run(delegate
@@ -232,7 +232,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> SerialWriteRead(string data, string till = "10")
         {
-            string Querry = EndpointUrl + ApiKey + "/serialWR?data=" + Uri.EscapeUriString(data) + "&till=" + till + "&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/serialWR?data=" + Uri.EscapeUriString(data) + "&till=" + till);
 
             string responseString = "";
             await Task.Run(delegate
@@ -253,7 +253,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> GetDeviceVersion()
         {
-            string Querry = EndpointUrl + ApiKey + "/version?&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/version?");
 
             string responseString = "";
             await Task.Run(delegate
@@ -271,7 +271,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> Restart()
         {
-            string Querry = EndpointUrl + ApiKey + "/restart?&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/restart?");
 
             string responseString = "";
             await Task.Run(delegate
@@ -289,7 +289,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> IsOnline()
         {
-            string Querry = EndpointUrl + ApiKey + "/isOnline?&deviceName=" + DeviceId;
+            string Querry = BuildQuerry("/isOnline?");
 
             string responseString = "";
             await Task.Run(delegate
@@ -299,8 +299,18 @@ namespace BoltIoT
 
             return new Response(responseString);
         }
-    
+
         #endregion
+
+        /// <summary>
+        /// Private function that appends Device ID, API Key and EndpointUrl to a build a URL querry.
+        /// </summary>
+        /// <param name="parameters">URL parameters</param>
+        /// <returns></returns>
+        private string BuildQuerry(string parameters)
+        {
+            return EndpointUrl + ApiKey + parameters + "&deviceName=" + DeviceId;
+        }
     }
 
     /// <summary>
