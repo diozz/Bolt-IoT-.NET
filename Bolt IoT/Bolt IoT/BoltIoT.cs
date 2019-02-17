@@ -47,7 +47,7 @@ namespace BoltIoT
         /// <returns></returns>
         public async Task<Response> DigitalMultiWrite(MultiPinConfig muliConfig)
         {
-            string Querry = BuildQuerry("/digitalMultiWrite?pin=" + muliConfig.PinCsv + "&state=" + muliConfig.StateCsv);
+            string Querry = BuildQuerry("/digitalMultiWrite?pins=" + muliConfig.PinCsv + "&state=" + muliConfig.StateCsv);
 
             string responseString = "";
             await Task.Run(delegate
@@ -83,7 +83,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> DigitalMultiRead(List<string> pins)
         {
-            string Querry = BuildQuerry("/digitalMultiRead?pin=" + string.Join(",", pins));
+            string Querry = BuildQuerry("/digitalMultiRead?pins=" + string.Join(",", pins));
 
             string responseString = "";
             await Task.Run(delegate
@@ -120,7 +120,7 @@ namespace BoltIoT
         /// <returns>Response object</returns>
         public async Task<Response> AnalogMultiWrite(MultiPinConfig muliConfig)
         {
-            string Querry = BuildQuerry("/analogMultiWrite?pin=" + muliConfig.PinCsv + "&state=" + muliConfig.StateCsv);
+            string Querry = BuildQuerry("/analogMultiWrite?pins=" + muliConfig.PinCsv + "&state=" + muliConfig.StateCsv);
 
             string responseString = "";
             await Task.Run(delegate
