@@ -5,7 +5,7 @@
 Start by creating a `Bolt` object.
 
 ```c#
-Bolt myBolt = new Bolt("<API KEY>", "DEVICE ID>");
+Bolt myBolt = new Bolt("<API KEY>", "<DEVICE ID>");
 ```
 
 ## GPIO Functions
@@ -148,6 +148,6 @@ Go through the sample project to have a better understanding of different usages
 
 ## See Also
 
-• [Bolt Cloud API Ddocumentation](https://docs.boltiot.com/docs/introduction).<br />
+• [Bolt Cloud API Documentation](https://docs.boltiot.com/docs/introduction).<br />
 • [Official Python Client Library](https://github.com/Inventrom/bolt-api-python).<br />
 • [Python Client Library Documentation](https://docs.boltiot.com/docs/python-library).
