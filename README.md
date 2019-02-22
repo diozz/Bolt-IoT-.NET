@@ -1,4 +1,4 @@
-# Bolt API Cloud - A C# Client Library
+# Bolt Cloud API - A C# Client Library
 
 ## Quickstart
 
